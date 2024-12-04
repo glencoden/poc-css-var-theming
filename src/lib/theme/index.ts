@@ -10,9 +10,9 @@ import type { Theme } from './types/Theme'
  *
  */
 
-export const setThemeStyle = (
-    property: keyof Theme,
-    value: Theme[keyof Theme]
+export const setThemeStyle = <T extends keyof Theme>(
+    property: T,
+    value: Theme[T]
 ) => {
     document.documentElement.style.setProperty(`--${property}`, value)
 }
