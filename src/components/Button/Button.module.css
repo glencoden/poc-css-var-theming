@@ -1,0 +1,17 @@
+.button {
+    /* reset */
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    font-family: inherit;
+    padding: 0 16px;
+    transition: opacity 0.2s;
+
+    /* custom */
+    width: var(--button-width);
+    height: var(--button-height);
+    background-color: var(--color-primary);
+}
