@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from '../../components/Button/Button'
+import { setThemeStyle } from '../../lib/theme'
 import styles from './Editor.module.css'
 
 const Editor: React.FC = () => {
@@ -9,20 +10,14 @@ const Editor: React.FC = () => {
 
             <Button
                 onClick={() => {
-                    document.documentElement.style.setProperty(
-                        '--color-primary',
-                        '#ff69b4'
-                    )
+                    setThemeStyle('color-primary', '#ff69b4')
                 }}
             >
                 Light
             </Button>
             <Button
                 onClick={() => {
-                    document.documentElement.style.setProperty(
-                        '--color-primary',
-                        '#000066'
-                    )
+                    // let's make this dark
                 }}
             >
                 Dark
